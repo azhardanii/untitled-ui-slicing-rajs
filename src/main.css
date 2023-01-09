@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .tab-link {
+        @apply cursor-pointer;
+    }
+    .tab-link:hover {
+        @apply border-b-[2px] border-slate-900 text-slate-900 pb-4;
+    }
+    .tab-link.active {
+      @apply border-b-[2px] border-slate-900 text-slate-900 pb-4;
+    }
+
+    .icon-nav {
+      @apply text-slate-500 p-2 cursor-pointer;
+    }
+    .icon-nav:hover {
+      @apply text-slate-900 bg-slate-200/50 rounded-md;
+    }
+    .icon-nav.active {
+      @apply text-slate-900 bg-slate-200/50 rounded-md;
+    }
+
+    .page {
+      @apply px-2 pb-1 pt-[2px] cursor-pointer;
+    }
+    .page:hover {
+      @apply bg-slate-200/50 text-slate-900 rounded-md;
+    }
+    .page.active {
+      @apply bg-slate-200/50 text-slate-900 rounded-md;
+    }
+}
