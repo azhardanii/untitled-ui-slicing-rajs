@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Untitled - RAJS</title>
-  <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>   
-    <nav class="bg-slate-100/50 border-b-[1px] border-slate-200 px-2 py-4 rounded">
-        <div class="w-10/12 flex flex-wrap items-center justify-between mx-auto">
+    <nav class="bg-slate-100/50 border-b-[1px] border-slate-200 px-1 sm:px-5 py-4 rounded">
+        <div class="w-full lg:w-10/12 flex flex-wrap items-center justify-between mx-auto">
             <!-- Left Nav -->
             <div class="flex items-center">
                 <img src="./public/img/logo.png" class="w-9 mr-1" alt="#" />
                 <span class="self-center text-xl font-semibold whitespace-nowrap">Untitled RAJS</span>
-                <div class="ml-6">
+                <div class="ml-6 hidden md:block">
                     <ul class="flex gap-4 text-sm text-slate-600 font-medium">
                         <li class="header-link">Home</li>
                         <li class="header-link">Dashboard</li>
@@ -26,7 +26,7 @@
             </div> 
 
             <!-- Right Nav -->
-            <div class="flex items-center gap-2">
+            <div class="hidden md:flex items-center gap-2">
                 <div class="icon-nav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -37,24 +37,31 @@
                         <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                         <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
                     </svg>
-                </div>
+                </div>                
                 <div class="icon-nav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                     </svg>
                 </div>
                 <img src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#" class="rounded-full w-9 -mt-2">
-            </div>                       
+            </div>    
+            <div class="flex md:hidden items-center gap-2">
+                <div class="icon-nav -scale-x-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <main class="w-10/12 mx-auto mt-12">
-        <div class="font-semibold text-3xl">
+    <main class="w-full lg:w-10/12 px-0 sm:px-6 mx-auto mt-12">
+        <div class="font-semibold text-3xl pl-3 sm:pl-0">
             Settings
         </div>
 
         <!-- Tab Links -->
-        <ul class="flex gap-5 mt-4 border-b-[1px] border-slate-200 text-slate-500 font-medium text-sm">
+        <ul class="hidden md:flex gap-5 mt-4 border-b-[1px] border-slate-200 text-slate-500 font-medium text-sm">
             <li class="tab-link">My details</li>
             <li class="tab-link">Profile</li>
             <li class="tab-link">Password</li>
@@ -66,72 +73,89 @@
             <li class="tab-link">Integrations</li>
             <li class="tab-link">API</li>
         </ul>
+        <div class="block md:hidden px-3 pt-5 -mb-3">            
+            <select class="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5">
+                <option>My details</option>
+                <option>Profile</option>
+                <option>Password</option>
+                <option selected>Team</option>
+                <option>Plan</option>
+                <option>Billing</option>
+                <option>Email</option>
+                <option>Notifications</option>
+                <option>Integrations</option>
+                <option>API</option>
+            </select>
+        </div>
 
         <!-- Main Content -->
-        <div class="border-[1px] border-slate-200 flex flex-col justify-between rounded-md shadow-md my-10 ">
+        <div class="border-[1px] border-slate-200 flex flex-col justify-between rounded-md shadow-md my-10">
             <!-- Table Head -->
-            <div class="flex items-center justify-between border-b-[1px] border-slate-200">
-                <div class="px-5 py-6 flex items-center">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b-[1px] border-slate-200 pt-3 pb-5 sm:pt-0 sm:pb-0">
+                <div class="px-3 sm:px-5 pb-5 sm:py-6 flex items-center">
                     <div class="font-semibold text-lg">Team members</div>
                     <div class="text-xs px-[6px] pb-[1.5px] bg-slate-200 rounded-full ml-2 mt-1.5 font-semibold">48 users</div>
                 </div>
-                <div class="flex px-5 gap-4">
-                    <button class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-2 flex justify-center items-center">
+                <div class="flex px-3 sm:px-5 gap-4">
+                    <button class="text-slate-900 bg-white border border-slate-300 focus:outline-none hover:bg-slate-100 focus:ring-4 focus:ring-slate-200 font-medium rounded-lg text-xs sm:text-sm px-2 sm:px-3 py-2 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-download mr-2" viewBox="0 0 16 16">
                             <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
                             <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
                         </svg>
                         Download CSV
                     </button>
-                    <button class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-lg text-sm px-3 flex items-center"><span class="text-[23px] mr-2 -mt-[3px]">+</span> Add User</button>
+                    <button class="text-white bg-slate-800 hover:bg-slate-900 focus:outline-none focus:ring-4 focus:ring-slate-300 rounded-lg text-xs sm:text-sm px-2 sm:px-3 flex items-center"><span class="text-[23px] mr-2 -mt-[3px]">+</span> Add User</button>
                 </div>
             </div>
 
             <!-- Table Content -->
-            <div class="border-b-[1px] border-slate-200">
+            <div class="border-b-[1px] w-full border-slate-200 overflow-x-auto">
                 <table class="w-full text-sm text-left text-slate-500">
-                    <thead class="font-medium">
+                    <!-- Row Head -->
+                    <thead class="font-medium">                        
                         <tr>
-                            <td scope="col" class="p-4">
+                            <th scope="col" class="p-4">
                                 <div class="flex items-center">
                                     <input id="check-all" type="checkbox" class="w-4 h-4 appearance-none checked:bg-slate-500 text-slate-600 border-[1.4px] border-slate-300 rounded-[4px] focus:ring-slate-500">
                                     <label for="check-all" class="sr-only">checkbox</label>
                                 </div>
-                            </td>
-                            <td scope="col">
+                            </th>
+                            <th scope="col">
                                 Name
-                            </td>
-                            <td scope="col">
+                            </th>
+                            <th scope="col">
                                 <div class="flex items-center">
                                     Status 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short mt-1" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
                                     </svg>
                                 </div>
-                            </td>
-                            <td scope="col">
+                            </th>
+                            <th scope="col">
                                 Email address
-                            </td>
-                            <td scope="col">
+                            </th>
+                            <th scope="col">
                                 Teams
-                            </td>
+                            </th>
                         </tr>
                     </thead>
+
+                    <!-- Row Content -->
                     <tbody>
                         <!-- Row 1 -->
-                        <tr class="bg-slate-100/50">
+                        <tr class="bg-slate-100/60">
                             <td class="w-4 px-4 py-8">
                                 <div class="flex items-center">
                                     <input id="check-1" type="checkbox" class="w-4 h-4 appearance-none checked:bg-slate-500 text-slate-600 border-[1.4px] border-slate-300 rounded-[4px] focus:ring-slate-500">
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Olivia Rhye</div>
-                                        <div class="font-normal text-gray-500">@olivia</div>
+                                        <div class="font-normal text-slate-500">@olivia</div>
                                     </div>  
                                 </div>
                             </th>
@@ -146,10 +170,10 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[1px] pb-1 bg-purple-200/30 text-purple-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-purple-200/30 text-purple-500 rounded-full font-semibold flex items-center w-max">           
                                         Design
                                     </div>                                   
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">
                                         Product
                                     </div>
                                 </div>
@@ -179,12 +203,12 @@
                                     <label for="check-2" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Phoenix Baker</div>
-                                        <div class="font-normal text-gray-500">@phoenix</div>
+                                        <div class="font-normal text-slate-500">@phoenix</div>
                                     </div>  
                                 </div>
                             </th>
@@ -199,7 +223,7 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">
                                         Product
                                     </div>
                                     <div class="px-2 pt-[1px] pb-1 bg-green-200/30 text-green-600 rounded-full font-semibold flex items-center w-max">                                    
@@ -225,19 +249,19 @@
                         </tr>
 
                         <!-- Row 3 -->
-                        <tr class="bg-slate-100/50">
+                        <tr class="bg-slate-100/60">
                             <td class="w-4 px-4 py-8">
                                 <div class="flex items-center">
                                     <input id="check-1" type="checkbox" class="w-4 h-4 appearance-none checked:bg-slate-500 text-slate-600 border-[1.4px] border-slate-300 rounded-[4px] focus:ring-slate-500">
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
-                                <div class="flex items-center">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
+                                <div class="flex items-center mr-28">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Lana Steiner</div>
-                                        <div class="font-normal text-gray-500">@lana</div>
+                                        <div class="font-normal text-slate-500">@lana</div>
                                     </div>  
                                 </div>
                             </th>
@@ -252,10 +276,10 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[1px] pb-1 bg-rose-200/30 text-rose-700 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-rose-200/30 text-rose-700 rounded-full font-semibold flex items-center w-max">    
                                         Operations
                                     </div>                                   
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">  
                                         Product
                                     </div>
                                 </div>
@@ -285,12 +309,12 @@
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Demi Wilkinson</div>
-                                        <div class="font-normal text-gray-500">@demi</div>
+                                        <div class="font-normal text-slate-500">@demi</div>
                                     </div>  
                                 </div>
                             </th>
@@ -305,13 +329,13 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[1px] pb-1 bg-purple-200/30 text-purple-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-purple-200/30 text-purple-500 rounded-full font-semibold flex items-center w-max">
                                         Design
                                     </div>                                   
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max"> 
                                         Product
                                     </div>
-                                    <div class="px-2 pt-[1px] pb-1 bg-green-200/30 text-green-600 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-green-200/30 text-green-600 rounded-full font-semibold flex items-center w-max">
                                         Software Engineering
                                     </div>   
                                 </div>
@@ -334,19 +358,19 @@
                         </tr>
 
                         <!-- Row 5 -->
-                        <tr class="bg-slate-100/50">
+                        <tr class="bg-slate-100/60">
                             <td class="w-4 px-4 py-8">
                                 <div class="flex items-center">
                                     <input id="check-1" type="checkbox" class="w-4 h-4 appearance-none checked:bg-slate-500 text-slate-600 border-[1.4px] border-slate-300 rounded-[4px] focus:ring-slate-500">
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Candice Wu</div>
-                                        <div class="font-normal text-gray-500">@candice</div>
+                                        <div class="font-normal text-slate-500">@candice</div>
                                     </div>  
                                 </div>
                             </th>
@@ -361,10 +385,10 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[1px] pb-1 bg-rose-200/30 text-rose-700 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-rose-200/30 text-rose-700 rounded-full font-semibold flex items-center w-max">
                                         Operations
                                     </div>                                    
-                                    <div class="px-2 pt-[2px] pb-1 bg-purple-200/30 text-purple-700 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-purple-200/30 text-purple-700 rounded-full font-semibold flex items-center w-max">
                                         Finance
                                     </div>
                                 </div>
@@ -394,12 +418,12 @@
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Natali Craig</div>
-                                        <div class="font-normal text-gray-500">@natali</div>
+                                        <div class="font-normal text-slate-500">@natali</div>
                                     </div>  
                                 </div>
                             </th>
@@ -414,10 +438,10 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[1px] pb-1 bg-purple-200/30 text-purple-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-purple-200/30 text-purple-500 rounded-full font-semibold flex items-center w-max">
                                         Design
-                                    </div>                                   
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-700 rounded-full font-semibold flex items-center w-max">                                    
+                                    </div>                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-700 rounded-full font-semibold flex items-center w-max">
                                         Marketing
                                     </div>
                                 </div>
@@ -440,19 +464,19 @@
                         </tr>
 
                         <!-- Row 7 -->
-                        <tr class="bg-slate-100/50">
+                        <tr class="bg-slate-100/60">
                             <td class="w-4 px-4 py-8">
                                 <div class="flex items-center">
                                     <input id="check-1" type="checkbox" class="w-4 h-4 appearance-none checked:bg-slate-500 text-slate-600 border-[1.4px] border-slate-300 rounded-[4px] focus:ring-slate-500">
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Drew Cano</div>
-                                        <div class="font-normal text-gray-500">@drew</div>
+                                        <div class="font-normal text-slate-500">@drew</div>
                                     </div>  
                                 </div>
                             </th>
@@ -467,13 +491,13 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-700 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-700 rounded-full font-semibold flex items-center w-max">
                                         Customer Success
                                     </div>                                  
-                                    <div class="px-2 pt-[2px] pb-1 bg-pink-200/30 text-pink-600 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-pink-200/30 text-pink-600 rounded-full font-semibold flex items-center w-max">
                                         Operations
                                     </div>
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-700 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-700 rounded-full font-semibold flex items-center w-max">
                                         Marketing
                                     </div>
                                 </div>
@@ -503,12 +527,12 @@
                                     <label for="check-1" class="sr-only">checkbox</label>
                                 </div>
                             </td>
-                            <th scope="row" class="text-gray-900 whitespace-nowrap">
+                            <th scope="row" class="text-slate-900 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <img class="w-10 rounded-full" src="https://avatars.githubusercontent.com/u/22469178?v=4" alt="#">
                                     <div class="pl-3">
                                         <div class="text-base font-semibold">Orlando Diggs</div>
-                                        <div class="font-normal text-gray-500">@orlando</div>
+                                        <div class="font-normal text-slate-500">@orlando</div>
                                     </div>  
                                 </div>
                             </th>
@@ -523,10 +547,10 @@
                             </td>
                             <td>
                                 <div class="flex gap-2 items-center">
-                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[2px] pb-1 bg-blue-200/30 text-blue-500 rounded-full font-semibold flex items-center w-max">
                                         Product
                                     </div>
-                                    <div class="px-2 pt-[1px] pb-1 bg-green-200/30 text-green-600 rounded-full font-semibold flex items-center w-max">                                    
+                                    <div class="px-2 pt-[1px] pb-1 bg-green-200/30 text-green-600 rounded-full font-semibold flex items-center w-max">
                                         Software Engineering
                                     </div> 
                                 </div>
@@ -546,14 +570,17 @@
                                     </div>
                                 </div>
                             </td>
-                        </tr>                        
+                        </tr>    
+                        
+                        <!-- Row Use Script.js -->
+                        <tr id="data"></tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- Table Pagination -->
-            <div class="flex items-center justify-between px-5 py-4">
-                <button class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 pb-[2px] flex justify-center items-center">
+            <div class="hidden md:flex items-center justify-between px-5 py-4">
+                <button class="text-slate-900 bg-white border border-slate-300 focus:outline-none hover:bg-slate-100 focus:ring-4 focus:ring-slate-200 font-medium rounded-lg text-sm px-3 pb-[2px] flex justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-short -ml-2 mr-1 mt-[1.5px]" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
                     </svg>
@@ -579,14 +606,26 @@
                         <p>6</p>
                     </div>    
                 </div>          
-                <button class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 pb-[2px] flex justify-center items-center">
+                <button class="text-slate-900 bg-white border border-slate-300 focus:outline-none hover:bg-slate-100 focus:ring-4 focus:ring-slate-200 font-medium rounded-lg text-sm px-3 pb-[2px] flex justify-center items-center">
                     Next
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short -mr-2 ml-1 mt-[1.5px]" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                      </svg>
+                    </svg>
                 </button>                
             </div>
         </div>
-    </main>
+        <div class="flex md:hidden items-center justify-between px-6 pb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-short -ml-2 mr-1 mt-[1.5px]" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+            </svg>
+            <div class="flex items-center text-sm font-semibold text-slate-700">
+                <p>Page 2 of 10</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short -mr-2 ml-1 mt-[1.5px]" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+        </div>        
+    </main>    
 </body>
+    <script src="public/js/script.js"></script>
 </html>
